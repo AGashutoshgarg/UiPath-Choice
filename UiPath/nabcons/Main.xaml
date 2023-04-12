@@ -1,0 +1,328 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="869.6,28738.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.Presentations.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="616,28673.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Input\ashutoshgargpptmacro.xlsm&quot;,autoSave:=True,readOnly:=False,isWorkspace:=False,formatting:=2)]" Name="ashutoshgargpptmacro" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[string.Format(&quot;{0}\UiPath\NewBlankTask\output\FinalPPT.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="572.8,155.2" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[string.Format(&quot;{0}\UiPath\NewBlankTask\Input\WAPCOS PPT Format.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]" />
+    <ui:PowerPointApplicationScope Password="{x:Null}" CreateIfNotExists="False" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="572.8,28388.8" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_1" PresentationPath="[string.Format(&quot;{0}\UiPath\NewBlankTask\output\FinalPPT.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]" TemplatePath="[string.Format(&quot;{0}\UiPath\NewBlankTask\Input\WAPCOS PPT Format.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]" UseThemeFile="True">
+      <ui:PowerPointApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IPresentationQuickHandle" Name="FinalPPT" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="539.2,28138.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Retro" sap:VirtualizedContainerService.HintSize="496,19649.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_1" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[4]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C2:K15&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_2" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[5]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C16:K29&quot;)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReplaceShapeWithDataTable>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_3" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[6]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C30:K43&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_4" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[7]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C44:K57&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_5" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[8]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C58:K71&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_6" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[9]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C72:K85&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_7" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[10]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C86:K99&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_8" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[11]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C100:K113&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_9" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[12]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C114:K127&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_10" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[13]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C128:K141&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_11" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[14]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C142:K155&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_12" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[15]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C156:K169&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_13" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[16]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C170:K183&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_14" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[17]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C184:K197&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_15" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[18]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C198:K211&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_16" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[19]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C212:K225&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_17" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[20]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C226:K239&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_18" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[21]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C240:K253&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_19" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[22]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C254:K267&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_20" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[23]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C268:K281&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_21" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[24]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C282:K295&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_22" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[25]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C296:K309&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_23" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[26]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C310:K323&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_24" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[27]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C324:K337&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_25" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[28]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C338:K351&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_26" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[29]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C352:K365&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_27" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[30]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C366:K379&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_28" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[31]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C380:K393&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_29" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[32]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C394:K407&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_30" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[33]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C408:K421&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_31" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[34]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C422:K435&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_32" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[35]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C436:K449&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_33" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[36]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C450:K463&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_34" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[37]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C464:K477&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_35" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[38]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C478:K491&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_88" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="39" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C492:K505&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_89" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="40" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C506:K519&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_90" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="41" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C520:K533&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_91" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="42" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C534:K547&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_92" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="43" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C548:K561&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_93" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="44" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C562:K575&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_94" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="45" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C576:K589&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_95" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="46" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C590:K603&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_96" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="47" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C604:K617&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_97" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="48" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C618:K631&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_98" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="49" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C632:K645&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_99" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="50" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C646:K659&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_100" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="51" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C660:K673&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_101" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="52" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C674:K687&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_102" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="53" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C688:K701&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_103" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="54" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C702:K715&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_104" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="55" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C716:K729&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_105" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="56" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C730:K743&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_106" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="57" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C744:K757&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_107" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="58" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C758:K771&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_108" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="59" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C772:K785&quot;)]" />
+            </Sequence>
+            <Sequence DisplayName="New" sap:VirtualizedContainerService.HintSize="496,7763.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_36" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="60" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C2:K15&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_37" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="61" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C16:K29&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_38" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="62" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C30:K43&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_39" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="63" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C44:K57&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_40" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="64" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C58:K71&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_41" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="65" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C72:K85&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_42" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="66" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C86:K99&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_43" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="67" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C100:K113&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_44" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="68" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C114:K127&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_45" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="69" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C128:K141&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_46" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="70" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C142:K155&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_47" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="71" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C156:K169&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_48" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="72" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C170:K183&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_49" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="73" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C184:K197&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_50" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="74" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C198:K211&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_51" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="75" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C212:K225&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_52" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="76" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C226:K239&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_53" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="77" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C240:K253&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_54" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="78" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C254:K267&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_55" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="79" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C268:K281&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_56" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="80" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C282:K295&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_57" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="81" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;New&quot;).Range(&quot;C296:K309&quot;)]" />
+            </Sequence>
+            <Sequence DisplayName="Retro Commissioned" sap:VirtualizedContainerService.HintSize="496,83.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_58" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="82" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C2:H15&quot;)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReplaceShapeWithDataTable>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_59" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="83" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C16:H29&quot;)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReplaceShapeWithDataTable>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_60" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="84" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C30:H43&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_61" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="85" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C44:H57&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_62" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="86" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C58:H71&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_63" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="87" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C72:H85&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_64" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="88" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C86:H99&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_65" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="89" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C100:H113&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_66" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="90" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C114:H127&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_67" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="91" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C128:H141&quot;)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReplaceShapeWithDataTable>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_68" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="92" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C142:H155&quot;)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReplaceShapeWithDataTable>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_69" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="93" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C156:H169&quot;)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ReplaceShapeWithDataTable>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_70" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="94" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C170:H183&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_71" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="95" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C184:H197&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_72" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="96" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned Retro&quot;).Range(&quot;C198:H211&quot;)]" />
+            </Sequence>
+            <Sequence DisplayName="New Commissioned" sap:VirtualizedContainerService.HintSize="496,83.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_73" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="97" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C2:H15&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_74" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="98" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C16:H29&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_75" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="99" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C30:H43&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_76" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="100" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C44:H57&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_77" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="101" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C58:H71&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_78" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="102" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C72:H85&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_79" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="103" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C86:H99&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_80" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="104" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C100:H113&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_81" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="105" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C114:H127&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_82" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="106" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C128:H141&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_83" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="107" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C142:H155&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_84" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="108" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C156:H169&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_85" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="109" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C170:H183&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_86" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="110" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C184:H197&quot;)]" />
+              <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_87" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="111" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Commissioned New&quot;).Range(&quot;C198:H211&quot;)]" />
+            </Sequence>
+            <ui:ReplaceShapeWithDataTable AppendMode="OverwriteExistingData" DisplayName="Add Data Table to Slide" sap:VirtualizedContainerService.HintSize="496,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_109" Presentation="[FinalPPT]" ShapeName="Table 1" SlideIndex="[38]" StartColumn="1" StartRow="0" TableToInsert="[ashutoshgargpptmacro.Sheet(&quot;Retro&quot;).Range(&quot;C478:K491&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:PowerPointApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:PowerPointApplicationScope>
+  </ueab:SequenceX>
+</Activity>

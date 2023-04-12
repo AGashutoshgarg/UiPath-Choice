@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="834.4,1398.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="553.6,1333.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[string.Format(&quot;{0}\output\ZohoFinal.pptx&quot;, System.IO.Directory.GetCurrentDirectory())]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="510.4,155.2" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="input\WAPCOS PPT Format.pptx" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Microsoft Office Activation Wizard" sap:VirtualizedContainerService.HintSize="510.4,1048.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1aedfc06-3eed-4108-942f-2870a06f2c57" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,757.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1aedfc06-3eed-4108-942f-2870a06f2c57" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="519, 559, 88, 30" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;wnd aaname='Microsoft Office Activation Wizard' cls='NetUIHWND' /&gt;&lt;ctrl name='Cancel' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Microsoft Office Activation Wizard' cls='NetUIHWND' /&gt;&lt;ctrl name='Cancel' role='push button' automationid='' check:text='Cancel' /&gt;" Guid="5051f5e3-6f0d-4ee6-b6d9-eabcfe0d417d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAiCAYAAADSx77pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH6SURBVGhD7ZpNzsIgEIa5FgfqeTgNG4030MS4MhxAo3HRtaaZz7e/QCmmTYt+6SyeRctA06fDlAREnufEpIOFJ4aFJ6Yn/PF40Pl8ptPpRMfjkZmIMaZ06ft1hCMAoq/XK71eLyqKgpkA3N1ut9KlL90Rjq9yv9+DgzDjuVwuZbWwHTvCMRWez2ewMzMeuESW2457wkMdmenAqe2YhS8MC08MC08MC08MC2/RlAlJyoTa5uNHhBtSUpAQDRnpYNySrEY4XlSQVKa7ZxQpbcekYCXCdebJ9tGZlfmCsvZD1IK0Itlrq8DYTb/uGfZssgWvQjheMlY+3nIyRaa5LuU38dXMELJud9oKMkp2be9xtK6Elx8h09V475kk25g1CMcLj6rXthRfUKwtFAOQ7Z/6zMuPZ3idqXVZcMuAL8i+HhoX9+2xYuMtw5eFV/XUr70tKBPtlAe+1JjwkLyY1FjbfHxZ+Jv6p+hIb1YpnvAq24ekutdOrR6q4Q5rEQ7KWm5Nc+tnZ6/PpVKWlLhwv6+7uunud89ak/AV8VXhbZYNEOrz3+EMTwwLTwwLT0xUODY8eRN5PuAyKhxb+tjaD3VmxoOzKTh6Yjt2hDcHgRDImT4duEPifjwIBBBwOBxou93SZrNhJrDb7Wi/3/dkg55wZllYeGJYeFJy+gPmxD5bRQ8OdwAAAABJRU5ErkJggg==" InformativeScreenshot="3494a95f4a93f9a874a71768f050f946.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='NUIDialog' title='Microsoft Office Activation Wizard' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: chrome.exe" sap:VirtualizedContainerService.HintSize="433.6,467.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="a5b3b3c2-20ce-4d48-8dd3-c0cae8e55675" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376.8,250.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Access View'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5b3b3c2-20ce-4d48-8dd3-c0cae8e55675" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://analytics.zoho.in/open-view/209206000007518368/3a3dd1b1bd59d71de9323b616784bc99" DesignTimeRectangle="719, 525, 145, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Access View'" FullSelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' type='' class='' aaname='Access View' check:innerText='Access View' /&gt;" Guid="29ae2f09-9b8b-48fd-b7c0-cc003ec063e1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJUAAAAsCAYAAABsZ/ryAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANzSURBVHhe7Zw7bhsxEIZzozS5RZqcIKfIHVy5TeMzxG0KncClL6BGF5AXAgzDkBi+l+TM7EM7u4CUn8AXR1q+ZviRVLVfuq4zAGgCqYA6kAqoQ6R6+/vHHH/9NMcf38zx+1cAeJwf1hPnS+tQJdXb7we+AwAGcN6UHmWp/AnFNABgCuWJlaXyVx5TGYBJWH+oVPgNBZZg/aFScRUBmAGkAupAKqAOpALqQCqgDqQC6kAqoA6kAupsKNWj+TyZUA7PzPN75tmcJ8T9cXCV9ubDf475usFcbSfV04u52BxdTp39tzOfT0ydO+b9dSzuIN7l9ZF5dltsJlVIqt2FSa47SN4sxuLe7Uekux02kqo+/v0xf3ox76RexCe4KMIVEETtC79gcexchIVrx2TrFVd4KjOuJznu2G/1TL7+2rjbOuypGOOrc7TO6biNVDGg8074XJAS1j/jf4+E3x9F4riTIH5Xth1KeDmfUC/9vnFwCz9zUaS44zzr73mpSNxcfpj+Qjtbynp+PtzmWcYmUtEdyosiLpIPvlhgdhGiCMU4IZGlGA4qBxWIY6ZALLwo/PhMXW7jOIisbdvw+Xyo80jXRYf1pRISQXdcX5fs5JZJO0wSl1nEOK4rQ9Lk3T4qoAwVSJKVShXacnHTPqpxfHy23S7+9e1D/0PxXsvqUoXg5FIFJV0PDXJyS6JUYmnFiItYFDbhcY59mStYI4C4QSSp5FLNN4nk+nVj+BOpEKl8ntoosbJU8mmRk1YevytIxYoxgXQqDbbPJ9w8sfprh4rTI0k1daw+fj9e7Cf93/e1wtXnWFeqEUnSzuufCyLExcv12s+JZtf3i1fXk76vGdoQPdMEb0jz9NeRlB9GOClu4fsg0N7HkZ/FsS/pxCrqa7GqVD6ooZ2VdjrZjWWCmBPNEvouF5ORgOmfE50Vg9TjJOPnNk5s54uUH0YqC417YA4xhqp+ykkbryLrSRUnP7YbaJIsORmxNIlNJAFT4ceKMuTCJ7Pty5V259O+bJktVCCNJ+eHl8pB5irkJ8+3muO1G2E660kF/lsgFVAHUgF1IBVQB1IBdSAVUAdSAXUgFVAHUgF1IBVQh0qFVwmBJbCvEsJLz8ASuJee4fWMYAns6xm9WHiRLLgC8UWyCX9iuasQv7HAEM4P60l5QiWIVAAsozP/AFwLXLlfKEYyAAAAAElFTkSuQmCC" InformativeScreenshot="dc57e796c1c7ab26e6955711e096da72.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://analytics.zoho.in/open-view/209206000007518368/3a3dd1b1bd59d71de9323b616784bc99' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d9cf175ae90cba0393cd8c5fcdfd66c9.png" Selector="&lt;html app='chrome.exe' url='https://analytics.zoho.in/open-view/209206000007518368/3a3dd1b1bd59d71de9323b616784bc99' /&gt;" Url="https://analytics.zoho.in/open-view/209206000007518368/3a3dd1b1bd59d71de9323b616784bc99" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="648, 206, 625, 609" FilePath="C:\Program Files\Microsoft Office\root\Office16\powerpnt.exe" IconBase64="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" InformativeScreenshot="c8caa7c306a738bd0528806e4053ee6e.png" Selector="&lt;wnd app='powerpnt.exe' cls='NUIDialog' title='Microsoft Office Activation Wizard' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
